@@ -1,0 +1,35 @@
+
+<div class="heading">Applications</div>
+<div class="container">
+<div class="widget-box">
+
+   <div *ngFor="let application of applications" 
+      class="status-square" 
+      [ngClass]="{
+        'active': application.status === 'active', 
+        'inactive': application.status === 'inactive', 
+        'pending': application.status === 'pending'
+      }" 
+    (click)="onSelectApplication(application)">
+   <div class="name">{{ application.name }}</div>  
+    </div>
+</div>
+<div class="widget-box">
+ <div class="bus">Service Bus
+ 
+ <ul>
+    <li *ngFor="let bus of serviceBus">
+        <div class="busno">{{ bus }}</div>
+    </li>
+</ul>
+    </div>
+ <div class="messages">Active Messages
+ 
+<ul>
+    <li *ngFor="let message of activeMessages">
+        <div class="messageno">{{ message }}</div>
+    </li>
+</ul>
+    </div>
+</div>
+

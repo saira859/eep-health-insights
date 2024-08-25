@@ -1,0 +1,25 @@
+.nav-items {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: green; 
+    :hover {
+        background-color: darkgreen;
+    }
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-top: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item i.material-icons {
+    font-size: 36px; 
+    color: white; 
+}
+

@@ -1,0 +1,133 @@
+.widget-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    
+}
+
+.widget-box:nth-child(1) {
+    width: 400px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; 
+    padding: 10px;
+
+}
+
+.widget-box:nth-child(2) {
+    width: 300px; 
+    height: 121px;
+    text-align: justify;
+    
+}
+
+.widget-box:nth-child(3){
+    width: 260px;
+     }
+
+.container {
+    display: flex;
+    gap: 10px; 
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+   }
+
+.events {
+    color: green;
+    font-weight: bold;
+    
+}
+
+.status-square:hover {
+    background-color: darkgray; 
+    transform: scale(1.05); 
+}
+
+.eventsub {
+    color: gray;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.timedate{
+    color: gray;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.name{
+    color: gray;
+}
+
+.events, .time {
+    margin-left: 20px; 
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.time {
+    margin-right: 0;
+}
+
+.status-square.active {
+    background-color: green;
+    :hover {
+        background-color: darkgreen;
+    }
+    cursor: pointer;
+}
+
+.title{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.time{
+    color: green;
+    font-weight: bold;
+}
+
+
+.messages{
+    color: green;
+    font-weight: bold;
+   
+}
+
+.bus{
+    color: green;
+    font-weight: bold;
+  
+}
+
+.messageno{
+    color: gray;
+    font-weight: normal;
+   margin-top: 10px;
+}
+
+.busno{
+    color: gray;
+    font-weight: normal;
+   margin-top: 10px;
+}
+
+.rolename{
+    color: gray;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    width: 100%; 
+}

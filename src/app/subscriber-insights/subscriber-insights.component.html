@@ -1,0 +1,56 @@
+<div class="heading">Subscriber Insights</div>
+
+<div class="container">
+    <div class="widget-box">
+        <div class="events">Events Subscribed
+            <ul>
+                <li *ngFor="let event of eventsSubscribed">
+                    <div class="eventsub">{{ event }}</div>
+                </li>
+            </ul>
+        </div>
+            <div class="time">Delivered Time
+                <ul>
+                    <li *ngFor="let time of deliveredTime">
+                        <div class="timedate">{{ time }}</div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="widget-box">
+        <div class="title">Expected Roles</div>
+        <ul>
+            <li *ngFor="let role of expectedRoles">
+                <div class="rolename">{{ role }}</div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="widget-box">
+        <div class="bus">Service Bus
+            <ul>
+                <li *ngFor="let bus of serviceBus">
+                    <div class="busno">{{ bus }}</div>
+                </li>
+            </ul>
+        </div>
+        <div class="messages">Active Messages
+            <ul>
+                <li *ngFor="let message of activeMessages">
+                    <div class="messageno">{{ message }}</div>
+                </li>
+            </ul>
+        </div>
+       </div>
+       </div>
+       
+
+        
+                   
+                
+        
+
+
+
+           
+    

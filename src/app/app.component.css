@@ -1,0 +1,64 @@
+
+.main-container {
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column; 
+        width: 1280px;
+    }
+    
+    .side-nav {
+        width: 100%; 
+        height: auto; 
+        background-color: green;
+        color: white;
+        box-shadow: 5px 5px 5px #939393;
+        margin-top: 0;
+    }
+    
+    .main {
+        padding: 20px;
+        flex-grow: 1;
+        width:550px;
+    }
+    
+   
+    @media only screen and (min-width: 768px) { 
+        .main-container {
+            flex-direction: row; 
+            
+        }
+        
+        .side-nav {
+            width: 60px;
+            min-height: calc(100vh - 70px); 
+            margin-top: -50px;
+        }
+        
+        .main {
+            padding: 30px;
+        }
+    }
+    
+   
+    @media only screen and (max-width: 767px) {
+        .side-nav {
+            width: 100%;
+        }
+    
+        .main {
+            padding: 15px;
+        }
+    
+        .app-status {
+            margin-right: 5px;
+            padding: 8px;
+        }
+    }
+    
+ 
+    @media only screen and (max-width: 1300px) {
+        .side-nav {
+            width: 100px;
+            min-width: 100px;
+        }
+    }

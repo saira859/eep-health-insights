@@ -1,0 +1,106 @@
+.widget-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    
+}
+
+
+.widget-box:nth-child(2) {
+    width: 400px; 
+    
+}
+
+
+.status-square:hover {
+    background-color: darkgray; 
+    transform: scale(1.05); 
+}
+.status-square {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 4px; 
+    background-color: gray; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+        background-color: darkgreen;
+    }
+
+}
+
+.status-square.active {
+    background-color: green;
+    :hover {
+        background-color: darkgreen;
+    }
+    cursor: pointer;
+}
+
+.status-square.inactive {
+    background-color: red;
+    :hover {
+        background-color: darkred;
+    }
+    cursor: pointer;
+}
+
+.status-square.pending {
+    background-color: yellow;
+    :hover {
+        background-color: #8B8000;
+    }
+    cursor: pointer;
+}
+
+.name {
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.bus {
+    color: green;
+    font-weight: bold;
+}
+
+.messages {
+    color: green;
+    font-weight: bold;
+}
+
+.serviceBus {
+    color: gray;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.ActiveMessages {
+    color: gray;
+    margin-top: 30px;
+    font-weight: normal;
+} 
+
+.busno, .messageno {
+    color: gray;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    width: 100%; 
+}

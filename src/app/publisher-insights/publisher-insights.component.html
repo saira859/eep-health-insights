@@ -1,0 +1,57 @@
+<div class="heading">Publisher Insights</div>
+<div class="container">
+    <div class="widget-box">
+        <div class="events">Events Produced
+            <ul>
+                <li *ngFor="let event of eventsProduced">
+                    <div class="eventpro">{{ event }}</div>
+                </li>
+            </ul>
+        </div>
+            <div class="time">Received Time
+                <ul>
+                    <li *ngFor="let time of receivedTimes">
+                        <div class="timedate">{{ time }}</div>
+                    </li>
+                </ul>
+    </div>
+ <!--            <div class="timedate">3/19/2024 7:17:46</div>
+               <div class="timedate">3/20/2024 7:17:46</div>    -->
+            </div>  
+    
+    <div class="widget-box">
+        <div class="title">Expected Roles
+            <ul>
+            <li *ngFor="let role of expectedRoles">
+                <div class="rolename">{{ role }}</div>
+
+                </li>
+          </ul>
+        </div>
+        
+   <!--    <div class="status-square inactive">   --> 
+     <!--       <div class="name">Azure ServiceBus Receiver</div> -->
+    <!--   </div>-->
+    <!--   <div class="status-square active">   -->
+      <!--      <div class="name">Azure ServiceBus Sender</div>
+        </div>      -->
+    </div>
+        <div class="widget-box">
+            <div class="token">Publisher Token
+                <ul>
+                    <li *ngFor="let Token of publisherToken">
+                        <div class="tokenno">{{ Token }}</div>
+                    </li>
+                </ul>
+            </div>
+            
+                <div class="appinsight">Application Insights
+                   <div class="applogo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" fill="#000000"><path d="M540 1084v-80h-120v80h120Zm-240-160v-60h360v60H300Zm38-120q-94-48-148.5-134.5T135 516q0-141 99.5-240.5T475 176v320L276 795q8 7 18 12.5t22 9.5l159-276h40l159 276q11-3 21.5-9.5T684 795L485 496V176q141 0 240.5 99.5T825 516q0 103-54.5 189.5T622 840H338Z"/></svg>
+                   </div>
+                   
+                </div>
+        </div>
+
+
+</div>

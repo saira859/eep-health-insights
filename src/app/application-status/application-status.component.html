@@ -1,0 +1,12 @@
+<div class="app-status-container">
+    <h2>Applications</h2>
+    <div class="status-list">
+        <div
+        for="let i = 0; i < this.application.length; i++"
+        class="app-status"
+        [class]="application[i].status">
+    {{ application[i].name}}
+    
+        </div>
+    </div>
+</div>

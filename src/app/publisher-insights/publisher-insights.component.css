@@ -1,0 +1,124 @@
+.widget-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    
+}
+
+.widget-box:nth-child(1) {
+    width: 400px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 5px; /* Space between columns */
+    padding: 10px;
+
+}
+
+.widget-box:nth-child(2) {
+    width: 300px;
+    height: 121px;
+
+    text-align: justify;
+}
+
+.widget-box:nth-child(3) {
+    width: 353px; 
+    
+}
+
+.container {
+    display: flex;
+    gap: 10px; 
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.events {
+    color: green;
+    font-weight: bold;
+}
+
+.status-square:hover {
+    background-color: darkgray; 
+    transform: scale(1.05); 
+}
+.time {
+    color: green;
+    font-weight: bold;
+}
+
+.eventpro {
+    color: gray;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.timedate, .rolename {
+    color: gray;
+    margin-top: 30px;
+    font-weight: normal;
+}
+.events, .time {
+    margin-left: 20px; 
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.time {
+    margin-right: 0; 
+}
+
+
+.name {
+    color: gray;
+}
+
+.token{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: green;
+    width: 100%;
+    font-weight: bold;
+}
+
+.tokenno{
+    color: gray;
+    position: relative;
+    top: 7px;
+    font-weight: normal;
+}
+
+.appinsight{
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    top: 2px;
+    font-weight: bold;
+}
+
+.applogo{
+    margin-top: 10px;
+}
+.title{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%; 
+}
