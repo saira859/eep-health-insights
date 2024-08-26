@@ -104,3 +104,10 @@ ul {
     list-style: none; 
     width: 100%; 
 }
+
+.highlighted {
+    background-color: #e0e0e0; /* Change this to your preferred highlight color */
+    border: 2px solid #007bff; /* Optional: Add a border or other styling */
+    color: #fff; /* Optional: Change text color when highlighted */
+  }
+  
